@@ -1,13 +1,11 @@
 import React from 'react';
-import { Zap, Wind, Shield, HeadsetHelp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
-const FeatureCard = ({ icon: Icon, title, description }) => (
+const FeatureCard = ({ title, description }) => (
   <Card className="w-full md:w-64">
     <CardHeader>
-      <Icon className="w-12 h-12 mb-4 text-primary" />
-      <CardTitle>{title}</CardTitle>
+      <CardTitle className="text-2xl font-bold text-primary">{title}</CardTitle>
     </CardHeader>
     <CardContent>
       <CardDescription>{description}</CardDescription>
@@ -53,22 +51,18 @@ export default function MotorcycleLanding() {
           <h2 className="text-3xl font-bold mb-8 text-center">Why Choose RideRevolution?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard 
-              icon={Zap}
-              title="Cutting-Edge Technology"
+              title="Advanced Tech"
               description="Experience the latest advancements in motorcycle engineering and performance."
             />
             <FeatureCard 
-              icon={Wind}
-              title="Unmatched Performance"
+              title="Peak Performance"
               description="Feel the power and precision of our finely-tuned machines on every ride."
             />
             <FeatureCard 
-              icon={Shield}
               title="Safety First"
               description="Ride with confidence knowing you're protected by state-of-the-art safety features."
             />
             <FeatureCard 
-              icon={HeadsetHelp}
               title="Expert Support"
               description="Our team of skilled professionals ensures you receive top-notch assistance for all your needs."
             />
