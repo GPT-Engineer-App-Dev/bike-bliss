@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Wind, Shield, Tool } from 'lucide-react';
+import { Zap, Wind, Shield, HeadsetHelp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
@@ -68,9 +68,9 @@ export default function MotorcycleLanding() {
               description="Ride with confidence knowing you're protected by state-of-the-art safety features."
             />
             <FeatureCard 
-              icon={Tool}
+              icon={HeadsetHelp}
               title="Expert Support"
-              description="Our team of skilled technicians ensures your bike is always in top condition."
+              description="Our team of skilled professionals ensures you receive top-notch assistance for all your needs."
             />
           </div>
         </section>
