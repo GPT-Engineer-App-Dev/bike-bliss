@@ -1,5 +1,5 @@
 import React from 'react';
-import { Motorcycle, Wind, Shield, Tool } from 'lucide-react';
+import { Zap, Wind, Shield, Tool } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
@@ -53,7 +53,7 @@ export default function MotorcycleLanding() {
           <h2 className="text-3xl font-bold mb-8 text-center">Why Choose RideRevolution?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureCard 
-              icon={Motorcycle}
+              icon={Zap}
               title="Cutting-Edge Technology"
               description="Experience the latest advancements in motorcycle engineering and performance."
             />
